@@ -174,6 +174,31 @@ const App = () => (
                     <BiologyExplorer />
                   </ProtectedRoute>
                 } />
+                <Route path="/student/biology/food-chain" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <FoodChainHunter />
+                  </ProtectedRoute>
+                } />
+                <Route path="/student/biology/sprout-help" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <SproutHelp />
+                  </ProtectedRoute>
+                } />
+                <Route path="/student/biology/cycle-tap" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <CycleTap />
+                  </ProtectedRoute>
+                } />
+                <Route path="/student/biology/build-cell" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <BuildACell />
+                  </ProtectedRoute>
+                } />
+                <Route path="/student/biology/germ-game" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <GoodGermVsBadGerm />
+                  </ProtectedRoute>
+                } />
                 <Route path="/student/mathematics" element={
                   <ProtectedRoute allowedRoles={["student"]}>
                     <MathematicsPage />
