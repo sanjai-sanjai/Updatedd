@@ -55,6 +55,11 @@ const WaveRider = lazy(() => import("./pages/student/games/WaveRider"));
 const GravityDrop = lazy(() => import("./pages/student/games/GravityDrop"));
 const ChemistryLab = lazy(() => import("./pages/student/games/ChemistryLab"));
 const BiologyExplorer = lazy(() => import("./pages/student/games/BiologyExplorer"));
+const FoodChainHunter = lazy(() => import("./pages/student/games/FoodChainHunter"));
+const SproutHelp = lazy(() => import("./pages/student/games/SproutHelp"));
+const CycleTap = lazy(() => import("./pages/student/games/CycleTap"));
+const BuildACell = lazy(() => import("./pages/student/games/BuildACell"));
+const GoodGermVsBadGerm = lazy(() => import("./pages/student/games/GoodGermVsBadGerm"));
 const MathMissions = lazy(() => import("./pages/student/games/MathMissions"));
 const TeacherDashboard = lazy(() => import("./pages/teacher/TeacherDashboard"));
 const TeacherClassesPage = lazy(() => import("./pages/teacher/TeacherClassesPage"));
@@ -167,6 +172,31 @@ const App = () => (
                 <Route path="/student/biology/explorer" element={
                   <ProtectedRoute allowedRoles={["student"]}>
                     <BiologyExplorer />
+                  </ProtectedRoute>
+                } />
+                <Route path="/student/biology/food-chain" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <FoodChainHunter />
+                  </ProtectedRoute>
+                } />
+                <Route path="/student/biology/sprout-help" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <SproutHelp />
+                  </ProtectedRoute>
+                } />
+                <Route path="/student/biology/cycle-tap" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <CycleTap />
+                  </ProtectedRoute>
+                } />
+                <Route path="/student/biology/build-cell" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <BuildACell />
+                  </ProtectedRoute>
+                } />
+                <Route path="/student/biology/germ-game" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <GoodGermVsBadGerm />
                   </ProtectedRoute>
                 } />
                 <Route path="/student/mathematics" element={

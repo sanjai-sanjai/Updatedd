@@ -5,3 +5,6 @@ export { GeometryBuilder } from "./GeometryBuilder";
 export { ProbabilityRun } from "./ProbabilityRun";
 export { PatternMaster } from "./PatternMaster";
 export { VillageBudgetPlanner } from "./VillageBudgetPlanner";
+export { DragDropGame } from "./DragDropGame";
+export { MatchingGame } from "./MatchingGame";
+export { SimulationGame } from "./SimulationGame";
